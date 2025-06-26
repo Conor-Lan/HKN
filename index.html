@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Huisartsen Korte Nieuwstraat</title>
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-page">
+                <div class="welcome-header">
+                    <div class="logo">
+                        <img src="./assets/images/logo_L.png" alt="logo van de groepspraktijk">  
+                    </div>
+                    <div class="header-title">
+                        <p>Welkom bij:</p>
+                        <h1>Huisartsen Korte Nieuwstraat</h1>
+                    </div>
+                    <div class="header-buttons">
+                        <a href="http://sanmax.afsprakenbeheer.be/e/aHN0UVJrME14VXVnbXRmNHRzbE9EVDRpT2pFRWFUNU1hSXcrY3V6TUxPeXlObjhFdlBwdVNRPT0%3D" target="_blank">
+                            <button class="welcome-appointment">
+                                Afspraak maken
+                            </button>
+                        </a>
+                        <a href="./public/contact.html">
+                            <button class="welcome-contact" href="./public/contact.html">    
+                                Contacteer ons
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-container">
+                    <img src="./assets/images/kerstfoto 2024.jpg" alt="Groepsfoto van het team">
+                </div>
+                <div class="scroll">
+                    <a href="#navigation-page">
+                        <p>Meer informatie</p>
+                        <div class="scroll-animation">
+                            <div class="scroll-down"></div>
+                            <div class="scroll-down"></div>
+                        </div>
+                    </a>
+                </div> 
+        </div>
+        <div id="navigation-page">
+            <div class="navigation-header">
+                <div class="tab-selector">
+                    <button class="tablinks" onclick="openTab(event, 'Prikbord')" id="defaultOpen">Prikbord</button>
+                    <button class="tablinks" onclick="openTab(event, 'Team')">Team</button>
+                    <button class="tablinks" onclick="openTab(event, 'Raadpleging')">Raadpleging</button>
+                    <button class="tablinks" onclick="openTab(event, 'Aanbod')">Aanbod</button>
+                    <button class="tablinks" onclick="openTab(event, 'Overig')">Overig</button>
+                </div>
+                <div class="tab-appointment">
+                    <a href="http://sanmax.afsprakenbeheer.be/e/aHN0UVJrME14VXVnbXRmNHRzbE9EVDRpT2pFRWFUNU1hSXcrY3V6TUxPeXlObjhFdlBwdVNRPT0%3D" target="_blank">
+                        <button>
+                            Afspraak maken
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="navigation-content">
+                <div id="Prikbord" class="tabcontent">
+                    <div class="prikbord content-container">
+                        <h2>Item 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="prikbord content-container">
+                        <h2>Item 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div id="Team" class="tabcontent">
+                    <div class="team content-container">
+                        <h2>Team</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div id="Raadpleging" class="tabcontent">
+                    <div class="raadpleging content-container">
+                        <h2>Raadpleging</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div id="Aanbod" class="tabcontent">
+                    <div class="aanbod content-container">
+                        <h2>Aanbod</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div id="Overig" class="tabcontent">
+                    <div class="overig content-container">
+                        <h2>Overig</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div>
+                    <img class="contact-icon" src="./assets/images/icons/home_icon.svg">
+                    <p><a href="http://maps.google.com/?q=Korte Nieuwstraat 18, 2000 Antwerpen" target="_blank">Korte Nieuwstraat 18, 2000 Antwerpen</a></p>
+                </div>
+                <div>
+                    <img class="contact-icon" src="./assets/images/icons/call_icon.svg">
+                    <p><a href="tel:+3232317733">03 321 77 33</a></p>
+                </div>
+                <div>
+                    <img class="contact-icon" src="./assets/images/icons/mail_icon.svg">
+                    <p><a href="mailto:email@example.com">secretariaat@huisartsenkortenieuwstraat.be</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "flex";
+    evt.currentTarget.className += " active";
+}
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>    
+</body>
+</html>
