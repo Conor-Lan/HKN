@@ -28,7 +28,6 @@ body {
     align-items: center;
     align-content: center;
     height: 100dvh;
-    width: 100dvw;
     scroll-snap-align: start;
 }
 
@@ -74,6 +73,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    color:#FFFFFF;
 }
 
 .header-title > h1 {
@@ -115,7 +115,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -123,8 +123,6 @@ a {
     font-size: 1.1dvw;
 }
 .header-buttons button:hover {
-    height: 4.6dvh;
-    width: 12.2dvw;
     background-color: #F2EFE7;
     border: solid 2px #55966e;
     color: #55966e;
@@ -212,7 +210,6 @@ a {
     justify-content: flex-start;
     align-items: center;
     height: 100dvh;
-    width: 100dvw;
     background-color: #F2EFE7;
 }
 
@@ -231,65 +228,58 @@ a {
     justify-content: space-evenly;
     align-items: center;
     height: 7.5dvh;
-    width: 65dvw;
+    width: 60dvw;
     background-color: #55966e;
     border-radius: 25px;
 }
 
 .tab-selector button {
     height: 7.5dvh;
-    width: 13dvw;
+    width: 12dvw;
     background-color: #55966e;
-    border-radius: 24px;
-    border: none;
+    border-radius: 25px;
+    border: solid 0.3dvh #55966e;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.1dvw;
+    font-size: 1.3dvw;
 }
 
 .tab-selector button:hover{
-    height: 7.2dvh;
-    width: 13dvw;
     background-color: #F2EFE7;
-    border: solid 2px #55966e;
+    border: solid 0.3dvh #55966e;
     color: #55966e;
     font-weight: 500;
 }
 
 .tab-selector button.active {
-    height: 7.2dvh;
-    width: 13dvw;
     background-color: #F2EFE7;
-    border: solid 2px #55966e;
+    border: solid 0.3dvh #55966e;
     color: #55966e;
     font-weight: 500;
 }
 
 .tab-appointment button {
     height: 7.5dvh;
-    width: 12.5dvw;
+    width: 15dvw;
     background-color: #55966e;
-    border: none;
     border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: solid 0.3dvh #55966e;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.1dvw;
+    font-size: 1.3dvw;
 }
 
 .tab-appointment button:hover {
-    height: 7.2dvh;
-    width: 12.4dvw;
+    height: 7.5dvh;
+    width: 15dvw;
     background-color: #F2EFE7;
-    border: solid 2px #55966e;
+    border: solid 0.3dvh #55966e;
     color: #55966e;
     font-weight: 500;
 }
@@ -308,45 +298,136 @@ a {
 
 .tabcontent {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: flex-start;
-    gap: 1.5dvw;
-    height: 70dvh;
-    width: 78.5dvw;
+    align-items: center;
+    height: 72.5dvh;
+    width: 80dvw;
+    background-color: #55966e;
     border-radius: 25px;
+    border: solid 0.3dvh #55966e;
     color: white;
+    /* background-color: #F2EFE7; */
 }
 
-.content-container {
+.tab-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9.4dvh;
+    width: 80dvw;
+    border-radius: 22px;
+    margin: 0;
+}
+
+.tab-header > h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3dvw;
+    color: #F2EFE7;
+}
+
+/* Prikbord algemene layout */
+#prikbord .tabcontent-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80dvw;
+    height: 62.5dvh;
+    overflow: scroll;
+    border-radius: 0px 0px 22px 22px;
+}
+
+#prikbord .content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items:flex-start;
-    height: 30dvh;
-    width: 30dvw;
-    background-color: #F2EFE7;
-    border-radius: 15px;
+    align-items: flex-start;
+    background-color: #55966e;
+    border: solid 0.3dvh #F2EFE7;
+    border-radius: 22px;
+    margin: 2dvh 0dvh 1dvh 2dvh;
 }
 
-.tabcontent h2 {
-    color: #55966e;
+.item-title {
+    display: flex;
+    align-items: center;
+    background-color: #F2EFE7;
+    border-radius: 20px 20px 0px 0px;
+    width: inherit;
+}
+
+.item-title img {
+    height: 2.8dvw;
+    margin: 1dvw 0dvw 1dvw 1dvw;
+    /* color: #E43636; */
+}
+
+.item-title h2 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 450;
     font-style: normal;
     font-size: 2dvw;
-    margin-left: 2dvh;
+    color: #55966e;
+    margin: 1dvw 1dvw 1dvw 0dvw;
 }
 
-.tabcontent p {
-    color: #55966e;
+.item-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 22px 22px;
+    width: inherit;
+}
+
+.item-content h3 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.1dvw;
-    margin-left: 2dvh;
+    font-weight: 250;
+    font-style: italic;
+    font-size: 1.2dvw;
+    color:#F2EFE7;
+    margin: 1dvw 1dvw 0dvw 2dvw;
+
 }
+
+.item-content p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 1.3dvw;
+    color:#F2EFE7;
+    margin: 1dvw 1dvw 1dvw 2dvw;
+}
+.item-content a {
+    text-decoration: none;
+    color:#F2EFE7;
+}
+
+.item-content a:hover {
+    text-decoration: underline;
+}
+/* Prikbord individueel item layout */
+#haio {
+    width: 77dvw;
+    height: 30dvh;
+}
+#schilderwerken {
+    width: 38dvw;
+    height: 36dvh;
+}
+#huisartszoeker {
+    width: 38dvw;
+    height: 36dvh;
+}
+
+/*contact banner layout*/
 .contact-info {
     display: flex;
     justify-content: space-evenly;
@@ -377,3 +458,5 @@ a {
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+/* TODO mobile size */

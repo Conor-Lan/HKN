@@ -26,8 +26,8 @@
                                 Afspraak maken
                             </button>
                         </a>
-                        <a href="./public/contact.html">
-                            <button class="welcome-contact" href="./public/contact.html">    
+                        <a href="#contact-info">
+                            <button class="welcome-contact">    
                                 Contacteer ons
                             </button>
                         </a>
@@ -49,11 +49,11 @@
         <div id="navigation-page">
             <div class="navigation-header">
                 <div class="tab-selector">
-                    <button class="tablinks" onclick="openTab(event, 'Prikbord')" id="defaultOpen">Prikbord</button>
-                    <button class="tablinks" onclick="openTab(event, 'Team')">Team</button>
-                    <button class="tablinks" onclick="openTab(event, 'Raadpleging')">Raadpleging</button>
-                    <button class="tablinks" onclick="openTab(event, 'Aanbod')">Aanbod</button>
-                    <button class="tablinks" onclick="openTab(event, 'Overig')">Overig</button>
+                    <button class="tablinks" onclick="openTab(event, 'prikbord')" id="defaultOpen">Prikbord</button>
+                    <button class="tablinks" onclick="openTab(event, 'team')">Team</button>
+                    <button class="tablinks" onclick="openTab(event, 'raadpleging')">Raadpleging</button>
+                    <button class="tablinks" onclick="openTab(event, 'huisregels')">Huisregels</button>
+                    <button class="tablinks" onclick="openTab(event, 'overig')">Overig</button>
                 </div>
                 <div class="tab-appointment">
                     <a href="http://sanmax.afsprakenbeheer.be/e/aHN0UVJrME14VXVnbXRmNHRzbE9EVDRpT2pFRWFUNU1hSXcrY3V6TUxPeXlObjhFdlBwdVNRPT0%3D" target="_blank">
@@ -64,53 +64,123 @@
                 </div>
             </div>
             <div class="navigation-content">
-                <div id="Prikbord" class="tabcontent">
-                    <div class="prikbord content-container">
-                        <h2>Item 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div id="prikbord" class="tabcontent">
+                    <div class="tab-header">
+                        <h1>Prikbord</h1>
                     </div>
-                    <div class="prikbord content-container">
-                        <h2>Item 2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="tabcontent-container">
+                        <!-- TODO Prikbord content -->
+                        <div class="content" id="haio">
+                            <div class="item-title">
+                                <img class="content-icon" src="./assets/images/icons/exclamation_mark_icon.svg">
+                                <h2>Nieuwe HAIO</h2>
+                            </div>
+                            <div class="item-content">
+                                <h3>1 september 2025</h3>
+                                <p>
+                                    Op 30 september heeft Dr. Jasper Flies succesvol het eerste jaar van zijn opleiding tot huisarts afgerond.<br> 
+                                    Hij zet zijn opleiding verder in het ziekenhuis, waarbij we hem veel succes wensen!<br>
+                                    <br>
+                                    Vanaf 1 oktober verwelkomen we Dr. Laura Lenaerts in het team. Zij zal bij ons het laatste jaar van haar opleiding afwerken.<br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content" id="schilderwerken">
+                            <div class="item-title">
+                                <img class="content-icon" src="./assets/images/icons/exclamation_mark_icon.svg">
+                                <h2>Schilderwerken</h2>
+                            </div>
+                            <div class="item-content">
+                                <h3>11 juli 2025</h3>
+                                <p>
+                                    De praktijk wordt netjes verfraaid en geschilderd!<br>
+                                    <br>
+                                    Vanaf maandag 4/8 is er eventjes minder ruimte beschikbaar.
+                                    Niet-dringende afspraken kunt u daarom best uitstellen.<br>
+                                    <br>
+                                    We blijven telefonisch beschikbaar voor urgente vragen.<br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content" id="huisartszoeker">
+                            <div class="item-title">
+                                <img class="content-icon" src="./assets/images/icons/exclamation_mark_icon.svg">
+                                <h2>(Nog) geen huisarts?</h2>
+                            </div>
+                            <div class="item-content">
+                                <h3>1 april 2025</h3>
+                                <p>Kijk op <a href="www.huisartszoeker.be" target="_blank">www.huisartszoeker.be</a> en geef je adres in. <br>
+                                    <br>
+                                    Geen huisarts in jouw buurt? Dan kan je tijdelijk terecht bij Praktijk Aan de Stroom (PAS).<br>
+                                    <br>
+                                    Hulp nodig? Bel 03/375.80.03 voor ondersteuning.<br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Example item -->
+                        <!-- 
+                        <div class="content" id="">
+                            <div class="item-title">
+                                <img class="content-icon" src="./assets/images/icons/pin_icon.svg">
+                                <h2>Item Title</h2>
+                            </div>
+                            <div class="item-content">
+                                <h3>Date</h3>
+                                <p>Item Content</p>
+                            </div>
+                        </div> 
+                        -->
                     </div>
+                    
                 </div>
-                <div id="Team" class="tabcontent">
-                    <div class="team content-container">
+                <div id="team" class="tabcontent">
+                    <!-- TODO Team design -->
+                    <div class="team tabcontent-container">
+                        <!-- TODO Prikbord content -->
                         <h2>Team</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
-                <div id="Raadpleging" class="tabcontent">
-                    <div class="raadpleging content-container">
+                <div id="raadpleging" class="tabcontent">
+                    <!-- TODO Raadpleging design -->
+                    <div class="raadpleging tabcontent-container">
+                        <!-- TODO Raadpleging content -->
                         <h2>Raadpleging</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
-                <div id="Aanbod" class="tabcontent">
-                    <div class="aanbod content-container">
-                        <h2>Aanbod</h2>
+                <div id="huisregels" class="tabcontent">
+                    <!-- TODO Huisregels design -->
+                    <div class="huisregels tabcontent-container">
+                        <!-- TODO Huisregels content -->
+                        <h2>Huisregels</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
-                <div id="Overig" class="tabcontent">
-                    <div class="overig content-container">
+                <div id="overig" class="tabcontent">
+                    <!-- TODO Overig design -->
+                    <div class="overig tabcontent-container">
+                        <!-- TODO Overig content -->
                         <h2>Overig</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
             </div>
-            <div class="contact-info">
+            <div class="contact-info" id="contact-info">
                 <div>
                     <img class="contact-icon" src="./assets/images/icons/home_icon.svg">
-                    <p><a href="http://maps.google.com/?q=Korte Nieuwstraat 18, 2000 Antwerpen" target="_blank">Korte Nieuwstraat 18, 2000 Antwerpen</a></p>
+                    <a href="http://maps.google.com/?q=Korte Nieuwstraat 18, 2000 Antwerpen" target="_blank"><p>Korte Nieuwstraat 18, 2000 Antwerpen</p></a>
                 </div>
                 <div>
                     <img class="contact-icon" src="./assets/images/icons/call_icon.svg">
-                    <p><a href="tel:+3232317733">03 321 77 33</a></p>
+                    <a href="tel:+3232317733"><p>03 321 77 33</p></a>
                 </div>
                 <div>
                     <img class="contact-icon" src="./assets/images/icons/mail_icon.svg">
-                    <p><a href="mailto:email@example.com">secretariaat@huisartsenkortenieuwstraat.be</a></p>
+                    <a href="mailto:secretariaat@huisartsenkortenieuwstraat.be"><p>secretariaat@huisartsenkortenieuwstraat.be</p></a>
                 </div>
             </div>
         </div>
