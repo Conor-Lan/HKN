@@ -306,8 +306,6 @@ a {
     background-color: #55966e;
     border-radius: 25px;
     border: solid 0.3dvh #55966e;
-    color: white;
-    /* background-color: #F2EFE7; */
 }
 
 .tab-header {
@@ -339,7 +337,8 @@ a {
     align-items: flex-start;
     width: 80dvw;
     height: 62.5dvh;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     border-radius: 0px 0px 22px 22px;
 }
 
@@ -364,8 +363,8 @@ a {
 
 .item-title img {
     height: 2.8dvw;
-    margin: 1dvw 0dvw 1dvw 1dvw;
-    /* color: #E43636; */
+    margin: 0.5dvw 0dvw 0.5dvw 1dvw;
+    /* color: #E43636; This is the red color used in this image*/
 }
 
 .item-title h2 {
@@ -375,7 +374,7 @@ a {
     font-style: normal;
     font-size: 2dvw;
     color: #55966e;
-    margin: 1dvw 1dvw 1dvw 0dvw;
+    margin: 0.5dvw 1dvw 0.5dvw 0dvw;
 }
 
 .item-content {
@@ -416,15 +415,12 @@ a {
 /* Prikbord individueel item layout */
 #haio {
     width: 77dvw;
-    height: 30dvh;
 }
 #schilderwerken {
     width: 38dvw;
-    height: 36dvh;
 }
 #huisartszoeker {
     width: 38dvw;
-    height: 36dvh;
 }
 
 /*contact banner layout*/
