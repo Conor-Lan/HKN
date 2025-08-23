@@ -83,7 +83,7 @@ body {
 }
 
 .header-title > p {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.5dvw;
     font-style: oblique;
     margin-left: 1dvw;
@@ -106,27 +106,66 @@ a {
     font-optical-sizing: auto;
     font-style: normal;
 }
-.header-buttons button {
+
+.header-appointmentbutton {
     height: 5dvh;
     width: 12.5dvw;
     background-color: #55966e;
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
+    color: #F2EFE7;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.1dvw;
 }
+
+.header-contactbuttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12.5dvw;
+    height: 5dvh;
+}
+
+.contactbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5dvh;
+    width: 3.5dvw;
+    background-color: #55966e;
+    border: none;
+    border-radius: 20px;
+}
+
 .header-buttons button:hover {
     background-color: #F2EFE7;
     border: solid 2px #55966e;
     color: #55966e;
     font-weight: 400;
+}
+
+.iconwhite {
+    height: 2.5dvh;
+    display: block;
+}
+
+.icongreen {
+    height: 2.5dvh;
+    display: none;
+}
+
+.contactbutton:hover > .iconwhite {
+    display: none;
+}
+
+.contactbutton:hover > .icongreen {
+    display: block;
 }
 
 .banner-container {
@@ -311,9 +350,9 @@ a {
 .tab-header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    height: 9.4dvh;
+    height: 8.4dvh;
     width: 80dvw;
     border-radius: 22px;
     margin: 0;
@@ -336,7 +375,7 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     width: 80dvw;
-    height: 62.5dvh;
+    height: 63.5dvh;
     overflow-y: scroll;
     overflow-x: hidden;
     border-radius: 0px 0px 22px 22px;
@@ -348,8 +387,6 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: #55966e;
-    border: solid 0.3dvh #F2EFE7;
-    border-radius: 22px;
     margin: 2dvh 0dvh 1dvh 2dvh;
 }
 
@@ -357,6 +394,7 @@ a {
     display: flex;
     align-items: center;
     background-color: #F2EFE7;
+    border: solid 0.3dvh #F2EFE7;
     border-radius: 20px 20px 0px 0px;
     width: inherit;
 }
@@ -380,6 +418,7 @@ a {
 .item-content {
     display: flex;
     flex-direction: column;
+    border: solid 0.3dvh #F2EFE7;
     border-radius: 0px 0px 22px 22px;
     width: inherit;
 }
@@ -423,7 +462,99 @@ a {
     width: 38dvw;
 }
 
-/*contact banner layout*/
+/* Team Algemene Layout */
+#team .tabcontent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80dvw;
+    height: 63.5dvh;
+    border-radius: 22px;
+}
+
+.profiles-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30dvh;
+    width: 80dvw;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20dvh;
+    width: 11dvw;
+    /* border: solid 0.25dvh #F2EFE7; */
+    border-radius: 22px 22px 0px 0px;
+}
+
+.profile-picture > img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.profile > .profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 11dvw;
+    height: 6dvh;
+    background-color: #F2EFE7;
+    /* border: solid 0.25dvh #F2EFE7; */
+    border-radius: 0px 0px 22px 22px;
+}
+
+.profile-name h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 1dvw;
+    color:#55966e;
+}
+
+.meandra {
+    width: 13dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1dvw;
+}
+.meandra > a {
+    border: solid 0.2dvh #F2EFE7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2dvw;
+}
+.meandra img {
+    height: 1.2dvw;
+}
+
+.meandra > a:hover {
+    border: solid 0.2dvh #55966e;
+    border-radius: 10px;
+}
+
+.profile-spacer {
+    width: 0.1dvw;
+    height: 24dvh;
+}
+
+
+/* contact banner layout */
 .contact-info {
     display: flex;
     justify-content: space-evenly;
